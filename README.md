@@ -72,14 +72,26 @@ Design tools used:
 
 ### Prerequisites
 
-You can install ``pandas`` and ``scikit-learn`` with ``pip``::
+You can install ``pandas`` and ``scikit-learn`` with ``pip``:
 
-    # pip install pandas
-    # pip install scikit-learn
-
-    If it doesn't work, you can try the following (on Windows):
-    # py -m pip install pandas
-    # py -m pip install scikit-learn
+* pandas
+  ```sh
+  pip install pandas
+  ```
+* scikit-learn
+  ```sh
+  pip install scikit-learn
+  ```
+  If it doesn't work, you can try the following (on Windows):
+  
+  * pandas
+    ```sh
+    py -m pip install pandas
+    ```
+  * scikit-learn
+    ```sh
+    py -m pip install scikit-learn
+    ```
 
 <!-- CONTRIBUTING -->
 ## Contributing

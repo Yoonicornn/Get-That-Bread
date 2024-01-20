@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 import pandas as pd 
 import numpy as np  
 
-SandP500 = pd.read_csv("S&P500.csv")
+SandP500 = pd.read_csv("WhiteBread.csv")
 
 data = SandP500.iloc[:, 0].values.reshape(-1, 1)  # Assuming the first column is the feature
 target = SandP500.iloc[:, 1].values
@@ -19,7 +19,7 @@ test_scaled = ss.transform(test_input)
 lr = LinearRegression()
 lr.fit(train_scaled, train_target)
 
-new = ss.transform([[100]])
+new = ss.transform([[168]])
 
 pred = lr.predict(new)
 print(pred)

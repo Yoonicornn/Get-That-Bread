@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body{
+    background-color: beige;
+}
+.Container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.TitleBox{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.Title{
+    font-size:7vw;
+    text-align: center;
+    font: bold;
+    float: left;
+    width: 200px;
+    height: 200px;
+    shape-outside: polygon(0 0, 100% 0, 0% 100%);
+    font-family: "Bangers";
+}
+.Image {
+    /* width: 500px; */
+    width: 26.042vw;
+    /* height: 555px; */
+    height: 28.907vw;
+    flex-shrink: 0;
+    border-radius: 213px;
+    opacity: 0.65;
+  }
+  .Get{
+    margin-right: 400;
+  }
+  .That{
+    color: #00a99d;
+  font-family: Orbitron;
+  /* font-size: 10.625rem; */
+  font-size: 8.854vw;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  margin: 5rem;
+  }
+  .Bread{
+
+    margin-left: 8rem;
+
+  }

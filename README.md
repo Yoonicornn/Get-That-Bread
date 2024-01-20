@@ -114,6 +114,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 * **Udemy**: [The Complete Web Development Bootcamp](https://studentsupport.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/38126452#overview)
 * **StatCan**: [Monthly average retail prices for selected food products](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810024502&pickMembers%5B0%5D=1.5&cubeTimeFrame.startMonth=01&cubeTimeFrame.startYear=2017&cubeTimeFrame.endMonth=12&cubeTimeFrame.endYear=2023&referencePeriods=20170101%2C20231201)
+* **Yahoo! Finance**: [S&P 500 Historical Data](https://finance.yahoo.com/quote/%5EGSPC/history/?guccounter=1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

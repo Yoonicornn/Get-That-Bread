@@ -1,0 +1,26 @@
+﻿"Monthly average retail prices for selected food products 1 2"
+"Frequency: Monthly"
+"Table: 18-10-0245-02"
+"Release date: 2024-01-03"
+"Geography: Canada, Province or territory"
+""
+""
+
+"Geography","Quebec",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Products","January 2018","February 2018","March 2018","April 2018","May 2018","June 2018","July 2018","August 2018","September 2018","October 2018","November 2018","December 2018","January 2019","February 2019","March 2019","April 2019","May 2019","June 2019","July 2019","August 2019","September 2019","October 2019","November 2019","December 2019","January 2020","February 2020","March 2020","April 2020","May 2020","June 2020","July 2020","August 2020","September 2020","October 2020","November 2020","December 2020","January 2021","February 2021","March 2021","April 2021","May 2021","June 2021","July 2021","August 2021","September 2021","October 2021","November 2021","December 2021","January 2022","February 2022","March 2022","April 2022","May 2022","June 2022","July 2022","August 2022","September 2022","October 2022","November 2022","December 2022","January 2023","February 2023","March 2023","April 2023","May 2023","June 2023","July 2023","August 2023","September 2023","October 2023","November 2023"
+,"Dollars",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"White bread, 675 grams 4","3.44","3.32","3.27","3.32","3.42","3.55","3.24","3.40","3.22","3.26","3.29","3.49","3.55","3.46","3.42","3.55","3.50","3.76","3.47","3.49","3.40","3.39","3.37","3.47","3.43","3.35","3.27","3.58","3.36","3.54","3.42","3.46","3.44","3.31","3.32","3.41","3.40","3.32","3.35","3.57","3.38","3.45","3.42","3.59","3.50","3.30","3.42","3.51","3.51","3.73","3.82","3.95","3.91","3.99","4.09","4.15","3.93","3.78","4.25","4.38","4.23","4.08","4.15","4.33","4.26","4.40","4.37","4.28","4.25","4.25","4.22"
+
+
+
+
+Footnotes:
+1,"Average price estimates for these products are derived using transaction data from Canadian grocery retailers. The composition of a given product category may change over time due to evolving consumer purchasing patterns and product availability. Therefore, average prices may not be fully comparable from one month to another and should not be used as a representative measure of pure price change through time. Note: Data are subject to revision."
+2,"For concepts and definitions, see the <a href="https://www150.statcan.gc.ca/n1/pub/62f0014m/62f0014m2022007-eng.htm" rel="external noopener noreferrer" target="_blank">Methodological Supplement for the Monthly Average Retail Prices Table (opens new window)</a> publication, available in the Prices Analytical Series (62F0014M). Additional information, including product details, can be obtained by contacting the <a href="mailto:statcan.cpddisseminationunit-dpcunitedediffusion.statcan@statcan.gc.ca">Consumer Prices Division</a>."
+3,"Specific size - In most cases, a specific size or quantity can be easily identified as the measure of best fit for a particular product. For some products, a specific size or quantity is the most commonly purchased by a considerable amount (for example, 1 dozen eggs). Other products have multiple high-sale sizes over a large range (for example, milk). In this case we calculate separate average prices for each size (1 litre, 2 litres and 4 litres) in order to provide a fuller picture. Other products such as fresh produce and meats are often sold by weight, and provided as a price per kilogram. In these cases, one kilogram is applied as the specific size. These products are then standardized to ensure that the price per one kilogram is included in the average price calculation. The specific size alone provides sufficient coverage to produce a robust measure."
+4,"Standardized size - For certain products which are available to consumers in a wide variety of package sizes, prices for products within a set range of package sizes are standardized before the average price calculation. For example, prices for blocks of cheese ranging in size from 400 grams to 800 grams are adjusted to represent a 500 grams block of cheese, and are presented as such in the average prices table."
+
+
+
+"How to cite: Statistics Canada. Table 18-10-0245-02  Monthly average retail prices for selected food products"
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810024502

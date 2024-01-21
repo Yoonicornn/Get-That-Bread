@@ -27,20 +27,22 @@
 <!-- ABOUT US -->
 ## About Us
 
-We are a group of U2 students from McGill University majoring in Computer Science, Computer Engineering and Software Engineering.
+💻We are a group of U2 students from McGill University majoring in Computer Science, Computer Engineering and Software Engineering.👨‍💻👩‍💻
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-"Get That Bread" is an innovative and insightful website designed to highlight the impact of inflation on everyday life, with a particular focus on one of Quebec's staple foods - a loaf of white bread (675g). This platform is not just an ordinary price tracker; it's a tool that brings to light the long-term effects of inflation on food prices, making the economic concept tangible and relatable to everyone.
+🍞 *Get That Bread: Kneading Your Financial Future – Bite into the real cost of living tomorrow, and invest in your dough today!* 🥖
+
+"Get That Bread" is an innovative and insightful website designed to highlight the impact of inflation on everyday life, with a particular focus on one of Quebec's staple foods - a loaf of white bread (675g). This platform is not just an ordinary price tracker; it's a tool that brings to light the long-term effects of inflation on food prices, making the economic concept tangible and relatable to everyone.💸
 
 Through our website, users can enter a future year and discover the projected cost of a loaf of bread for that time. This projection is based on historical data and current inflation trends, offering a realistic glimpse into how the price of basic commodities like bread could escalate over time. Our goal is to raise awareness about the creeping nature of inflation and how it can silently erode purchasing power.
 
-But "Get That Bread" is more than just a wake-up call; it's a call to action. By vividly demonstrating the potential future costs of everyday items, we aim to encourage users to think proactively about their financial future. We emphasize the importance of investing and adopting sound financial strategies to safeguard against the erosive effects of inflation. Our platform is a stepping stone for users to seek professional financial advice and make informed decisions to secure their financial well-being.
+But "Get That Bread" is more than just a wake-up call📞; it's a call to action🎬. By vividly demonstrating the potential future costs of everyday items, we aim to encourage users to think proactively about their financial future. We emphasize the importance of investing and adopting sound financial strategies to safeguard against the erosive effects of inflation. Our platform is a stepping stone for users to seek professional financial advice and make informed decisions to secure their financial well-being.
 
 In a world where the value of money is ever-changing, "Get That Bread" serves as a crucial educational tool, sensitizing the public to the realities of inflation and the importance of financial planning. Join us in exploring how the cost of a simple loaf of bread can unfold a larger story about economics, investment, and the future of our finances.
 
-**While the app does not provide a definite price prediction of a loaf of white bread (675g), it empowers users to understand how inflation affects food prices and guides them toward seeking appropriate professional help in order to excape inflation.**
+❗**While the app does not provide a definite price prediction of a loaf of white bread (675g), it empowers users to understand how inflation affects food prices and guides them toward seeking appropriate professional help in order to escape inflation.** 📈
 
 ### Built with
 
@@ -107,7 +109,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 <!-- License -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE.txt` for more information.⚖️
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments

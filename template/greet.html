@@ -49,7 +49,6 @@
     <script>
       var xValues1 = [2024, "{{bread_year}}"];
       var yValues1 = [4.22, "{{inflation}}"];
-
       var barColors1 = ["#FFA726", "#FB8C00"];
 
       new Chart("myChart", {
@@ -61,13 +60,23 @@
         options: {
           legend: { display: false },
           title: { display: true, text: "Bread Inflation" },
-          scales: { yAxes: [{ ticks: { beginAtZero: true } }] },
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                  callback: function (value, index, values) {
+                    return "$" + value; // This will add a dollar sign to the y-axis labels
+                  },
+                },
+              },
+            ],
+          },
         },
       });
 
       var xValues2 = [2024, "{{futur_year}}"];
       var yValues2 = ["{{savings}}", "{{total}}"];
-
       var barColors2 = ["#66BB6A", "#2E7D32"];
 
       new Chart("myChart2", {
@@ -79,7 +88,18 @@
         options: {
           legend: { display: false },
           title: { display: true, text: "Investment Growth" },
-          scales: { yAxes: [{ ticks: { beginAtZero: true } }] },
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                  callback: function (value, index, values) {
+                    return "$" + value; // This will add a dollar sign to the y-axis labels
+                  },
+                },
+              },
+            ],
+          },
         },
       });
     </script>

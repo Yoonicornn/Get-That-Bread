@@ -9,6 +9,8 @@ def home():
 @app.route("/greet", methods=["GET", "POST"])
 def greet():
     name = request.args.get("name","world")
+    splitName = name.split("/")
+    print(splitName)
     return render_template("greet.html", name=name)
 
 

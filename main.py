@@ -19,6 +19,7 @@ def greet():
 
     name= predict_price("WhiteBread.csv",year,month)
     name = name[0]
+    name = round(name,2)
     percentage = abs((name - 4.22)/4.22) * 100
     percentage = round(percentage,2)
     print(name)

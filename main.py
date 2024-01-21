@@ -18,7 +18,7 @@ def greet():
     print(month)
 
     name= predict_price("WhiteBread.csv",year,month)
-    name=name[0]
+    name=round(name[0],2)
     print(name)
     
     return render_template("greet.html", name=name)

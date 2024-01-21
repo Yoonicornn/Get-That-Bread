@@ -23,9 +23,6 @@ def greet():
     futur_year=int(futur_year)
     savings=int(savings)
     date_month=int(date_month)
-   
-    
-    
     
     print(savings)
     print(date_month)
@@ -54,4 +51,3 @@ def greet():
 
 if __name__ == "__main__":
     app.run(debug = True)
-

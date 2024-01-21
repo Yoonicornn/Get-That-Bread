@@ -2,7 +2,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
 import pandas as pd 
-import numpy as np  
 from app import input_to_index_bread, input_to_index_sp
 
 def predict_price(csv_file, year, month):
@@ -12,7 +11,6 @@ def predict_price(csv_file, year, month):
     target = csv.iloc[:, 1].values
 
     train_input, test_input, train_target, test_target = train_test_split(data, target, test_size=0.2, random_state=42)
-
 
     ss = StandardScaler()
     train_scaled = ss.fit_transform(train_input)
@@ -29,7 +27,6 @@ def predict_price(csv_file, year, month):
 
     pred = lr.predict(new)
     return pred
-    print(pred)
 
 if __name__ == "__main__":
     predict_price("WhiteBread.csv", 2030, 1)

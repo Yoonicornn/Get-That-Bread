@@ -28,6 +28,7 @@ def predict_price(csv_file, year, month):
     new = ss.transform([[index]])
 
     pred = lr.predict(new)
+    return pred
     print(pred)
 
 if __name__ == "__main__":

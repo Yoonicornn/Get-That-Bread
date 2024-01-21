@@ -1,4 +1,6 @@
 from flask import Flask, request, jsonify,render_template
+from LinearRegression import predict_price
+from app import input_to_index_bread, input_to_index_sp
 
 app=Flask(__name__,template_folder='template')
 
@@ -10,7 +12,15 @@ def home():
 def greet():
     name = request.args.get("name","world")
     splitName = name.split("/")
-    print(splitName)
+    year = int(splitName[0])  
+    month = int(splitName[1])
+    print(year)
+    print(month)
+
+    name= predict_price("WhiteBread.csv",year,month)
+    name=name[0]
+    print(name)
+    
     return render_template("greet.html", name=name)
 
 

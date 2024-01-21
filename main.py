@@ -49,7 +49,7 @@ def greet():
     
     print(investment)
     
-    return render_template("greet.html", inflation=inflation,bread_year=bread_year, percentage_bread=percentage_bread,savings=savings,date_month=date_month, investment=investment,total=total, percentage_investment=percentage_investment)
+    return render_template("greet.html", inflation=inflation,bread_year=bread_year, percentage_bread=percentage_bread,savings=savings,date_month=date_month, investment=investment,total=total, percentage_investment=percentage_investment,futur_year=futur_year)
 
 
 if __name__ == "__main__":

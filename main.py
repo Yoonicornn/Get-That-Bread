@@ -44,7 +44,7 @@ def greet():
     
     percentage_bread = ((inflation - 4.22)/4.22) * 100
     percentage_bread = round(percentage_bread,2)
-    percentage_investment= ((total-1000)/1000)*100
+    percentage_investment= ((total-savings)/savings)*100
     percentage_investment=round(percentage_investment,2)
     
     print(investment)

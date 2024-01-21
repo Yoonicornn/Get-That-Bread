@@ -1,66 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="static/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
 
-<div class="Container">
-    <div class="Title">
-        <div class="TitleBox">
-            <div> Get</div>
-            <div> That</div>
-            <div> Bread</div>
-        </div>
-    </div>
-
-    <div>
-        <img class="Image" src="static/Images/Logo.png" alt="Bread" />
-    </div>
-</div>
-
-<div>
-     Inflation percentage {{percentage}}%
-</div>
-
-<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
-
-<script>
-    var xValues = [2024, "{{year}}"];
-    var yValues = [4.22, "{{name}}"];
-    var barColors = ["green", "red"];
-    
-    new Chart("myChart", {
-      type: "bar",
-      data: {
-        labels: xValues,
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        legend: {display: false},
-        title: {
-          display: true,
-          text: "Bread Inflation"
-        },
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true, // This ensures the Y-axis starts at 0
-              // You can also add other properties like stepSize, max, min if needed
-            }
-          }]
-        }
+    <style>
+      .chart-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; /* This will allow the charts to wrap if the screen is too small */
       }
-    });
-    </script>
+      .chart-container canvas {
+        max-width: 600px; /* Increased from 300px to 600px */
+        margin: 10px; /* Optional: adds some space around each chart */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="Title">
+        <div class="TitleBox">
+          <div>Get</div>
+          <div>That</div>
+          <div>Bread</div>
+        </div>
+      </div>
 
-</body>
+      <div>
+        <img class="Image" src="static/Images/Logo.png" alt="Bread" />
+      </div>
+    </div>
+
+    <div>Bread Inflation {{percentage_bread}}%</div>
+    <div>Investment Growth {{percentage_investment}}%</div>
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+      <canvas id="myChart2"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <script>
+      // Data for the first chart
+      var xValues1 = [2024, "{{bread_year}}"];
+      var yValues1 = [4.22, "{{inflation}}"];
+      var barColors1 = ["green", "blue"];
+
+      new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: xValues1,
+          datasets: [{ backgroundColor: barColors1, data: yValues1 }],
+        },
+        options: {
+          legend: { display: false },
+          title: { display: true, text: "Bread Inflation" },
+          scales: { yAxes: [{ ticks: { beginAtZero: true } }] },
+        },
+      });
+
+      // Data for the second chart
+      var xValues2 = [2024, "{{futur_year}}"];
+      var yValues2 = ["{{savings}}", "{{total}}"];
+      var barColors2 = ["red", "purple"];
+
+      new Chart("myChart2", {
+        type: "bar",
+        data: {
+          labels: xValues2,
+          datasets: [{ backgroundColor: barColors2, data: yValues2 }],
+        },
+        options: {
+          legend: { display: false },
+          title: { display: true, text: "Investment Growth" },
+          scales: { yAxes: [{ ticks: { beginAtZero: true } }] },
+        },
+      });
+    </script>
+  </body>
 </html>

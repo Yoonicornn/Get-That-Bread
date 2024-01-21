@@ -1,34 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="static/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-
-<div class="Container">
-    <div class="Title">
+  </head>
+  <body>
+    <div class="Container">
+      <div class="Title">
         <div class="TitleBox">
-            <div> Get</div>
-            <div> That</div>
-            <div> Bread</div>
+          <div>Get</div>
+          <div>That</div>
+          <div>Bread</div>
         </div>
+      </div>
+
+      <div>
+        <img class="Image" src="static/Images/Logo.png" alt="Bread" />
+      </div>
     </div>
 
     <div>
-        <img class="Image" src="static/Images/Logo.png" alt="Bread" />
+      <form action="/greet" method="get">
+        <input
+          autocomplete="off"
+          autofocus
+          name="bread_year"
+          placeholder="Bread_Year"
+          method="get"
+        />
+        <input
+          autocomplete="off"
+          autofocus
+          name="bread_month"
+          placeholder="Bread_Month"
+          method="get"
+        />
+        <input
+          autocomplete="off"
+          autofocus
+          name="savings"
+          placeholder="Savings"
+          method="get"
+        />
+        <input
+          autocomplete="off"
+          autofocus
+          name="year"
+          placeholder="Year"
+          method="get"
+        />
+        <input
+          autocomplete="off"
+          autofocus
+          name="month"
+          placeholder="Month"
+          method="get"
+        />
+
+        <button type="submit">Submit</button>
+      </form>
     </div>
-</div>
-
-<div>
-    <form action="/greet" method="get">
-        <input autocomplete="off" autofocus name="name" placeholder="YYYY/MM" method="get">
-        <button type="submit">Submit<button>
-    </form>
-</div>
-
-</body>
+  </body>
 </html>

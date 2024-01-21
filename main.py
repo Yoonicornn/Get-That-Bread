@@ -10,21 +10,46 @@ def home():
 
 @app.route("/greet", methods=["GET", "POST"])
 def greet():
-    name = request.args.get("name","world")
-    splitName = name.split("/")
-    year = int(splitName[0])  
-    month = int(splitName[1])
-    print(year)
-    print(month)
-
-    name= predict_price("WhiteBread.csv",year,month)
-    name = name[0]
-    name = round(name,2)
-    percentage = abs((name - 4.22)/4.22) * 100
-    percentage = round(percentage,2)
-    print(name)
+   
+    savings=request.args.get("savings")
+    date_month=request.args.get("month")
+    futur_year=request.args.get("year")
+    bread_year=request.args.get("bread_year")
+    bread_month=request.args.get("bread_month")
     
-    return render_template("greet.html", name=name, year=year, percentage=percentage)
+    bread_year=int(bread_year)
+    bread_month=int(bread_month)
+   
+    futur_year=int(futur_year)
+    savings=int(savings)
+    date_month=int(date_month)
+   
+    
+    
+    
+    print(savings)
+    print(date_month)
+    print(futur_year)
+
+    inflation= predict_price("WhiteBread.csv",bread_year,bread_month)
+
+    investment=predict_price("S&P500.csv",futur_year,date_month)
+    total=(savings/4839.81)*investment
+    print(total)
+    total=total[0]
+    total=round(total,2)
+
+    inflation = inflation[0]
+    inflation = round(inflation,2)
+    
+    percentage_bread = ((inflation - 4.22)/4.22) * 100
+    percentage_bread = round(percentage_bread,2)
+    percentage_investment= ((total-1000)/1000)*100
+    percentage_investment=round(percentage_investment,2)
+    
+    print(investment)
+    
+    return render_template("greet.html", inflation=inflation,bread_year=bread_year, percentage_bread=percentage_bread,savings=savings,date_month=date_month, investment=investment,total=total, percentage_investment=percentage_investment)
 
 
 if __name__ == "__main__":

@@ -26,9 +26,7 @@
     <div class="Container">
       <div class="Title">
         <div class="TitleBox">
-          <div>Get</div>
-          <div>That</div>
-          <div>Bread</div>
+          Get That Bread
         </div>
       </div>
 
@@ -37,8 +35,8 @@
       </div>
     </div>
 
-    <div>Bread Inflation {{percentage_bread}}%</div>
-    <div>Investment Growth {{percentage_investment}}%</div>
+    <div>Bread Inflation <strong>{{percentage_bread}}% </strong></div>
+    <div>Investment Growth <strong>{{percentage_investment}}%</strong></div>
     <div class="chart-container">
       <canvas id="myChart"></canvas>
       <canvas id="myChart2"></canvas>
@@ -87,7 +85,7 @@
         },
         options: {
           legend: { display: false },
-          title: { display: true, text: "Investment Growth" },
+          title: { display: true, text: "Investment Growth (S&P500)" },
           scales: {
             yAxes: [
               {

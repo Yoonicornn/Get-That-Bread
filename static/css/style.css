@@ -50,3 +50,13 @@ body{
     margin-left: 8rem;
 
   }
+  .SubTitle{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .Investment{
+    padding-left: 50.25vh;
+  }
+  .Submission{
+    display: flex;
+  }

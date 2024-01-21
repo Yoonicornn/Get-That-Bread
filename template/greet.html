@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="static/css/style.css">
@@ -24,8 +25,42 @@
 </div>
 
 <div>
-    Hello, {{name}}
+    Hello, {{percentage}}
 </div>
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+    var xValues = [2024, "{{year}}"];
+    var yValues = [4.22, "{{name}}"];
+    var barColors = ["green", "red"];
+    
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "Bread Inflation"
+        },
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true, // This ensures the Y-axis starts at 0
+              // You can also add other properties like stepSize, max, min if needed
+            }
+          }]
+        }
+      }
+    });
+    </script>
 
 </body>
 </html>

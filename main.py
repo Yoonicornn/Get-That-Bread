@@ -18,10 +18,12 @@ def greet():
     print(month)
 
     name= predict_price("WhiteBread.csv",year,month)
-    name=round(name[0],2)
+    name = name[0]
+    percentage = abs((name - 4.22)/4.22) * 100
+    percentage = round(percentage,2)
     print(name)
     
-    return render_template("greet.html", name=name)
+    return render_template("greet.html", name=name, year=year, percentage=percentage)
 
 
 if __name__ == "__main__":

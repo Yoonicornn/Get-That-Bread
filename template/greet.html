@@ -14,11 +14,11 @@
       .chart-container {
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap; /* This will allow the charts to wrap if the screen is too small */
+        flex-wrap: wrap;
       }
       .chart-container canvas {
-        max-width: 600px; /* Increased from 300px to 600px */
-        margin: 10px; /* Optional: adds some space around each chart */
+        max-width: 600px;
+        margin: 10px;
       }
     </style>
   </head>
@@ -47,10 +47,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
     <script>
-      // Data for the first chart
       var xValues1 = [2024, "{{bread_year}}"];
       var yValues1 = [4.22, "{{inflation}}"];
-      var barColors1 = ["green", "blue"];
+
+      var barColors1 = ["#FFA726", "#FB8C00"];
 
       new Chart("myChart", {
         type: "bar",
@@ -65,10 +65,10 @@
         },
       });
 
-      // Data for the second chart
       var xValues2 = [2024, "{{futur_year}}"];
       var yValues2 = ["{{savings}}", "{{total}}"];
-      var barColors2 = ["red", "purple"];
+
+      var barColors2 = ["#66BB6A", "#2E7D32"];
 
       new Chart("myChart2", {
         type: "bar",
